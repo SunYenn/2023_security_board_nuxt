@@ -68,7 +68,6 @@ export default {
             tableData: [],
             total_page: 0,
             current_page: 1,
-
             form: {
                 search_obj: '',
                 search_category: 'null',
