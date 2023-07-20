@@ -206,6 +206,8 @@
             fileName: this.board.realfilename
           }
         }).then(response => {
+          console.log(response.data)
+          console.log(new Blob([response.data]))
           // 다운로드 요청이 성공하면 파일 다운로드 시작
           // 서버에서 받은 response.data를 사용하여 Blob 객체(파일 데이터) 생성
           const url = window.URL.createObjectURL(new Blob([response.data]));
